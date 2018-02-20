@@ -196,13 +196,13 @@ function moveOff(item, pointer) {
 
 function render() {
 
-    game.debug.text('Follow the instructions to select your grocery list', 10, 32, 'rgb(0,0,255)');
+    game.debug.text('Follow the instructions to select your grocery list.', 10, 32, 'rgb(0,0,255)');
 
     if (!intro)
     {
         if (simonSez)
         {
-            game.debug.text('Pick the following groceries', 360, 96, 'rgb(255,0,0)');
+            game.debug.text('Pick the following groceries', 300, 96, 'rgb(255,0,0)');
         }
         else
         {
@@ -216,11 +216,11 @@ function render() {
 
     if (winner)
     {
-        game.debug.text('You Win!', 360, 32, 'rgb(0,0,255)');
+        game.debug.text('You Win!', 360, 62, 'rgb(0,0,255)');
     }
     else if (loser)
     {
-        game.debug.text('You Lose!', 360, 32, 'rgb(0,0,255)');
+        game.debug.text('You Lose!', 360, 62, 'rgb(0,0,255)');
     }
 
 }
